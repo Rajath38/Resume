@@ -1,0 +1,130 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=2 cm, % seperation between body and page edge from the top
+    bottom=2 cm, % seperation between body and page edge from the bottom
+    left=2 cm, % seperation between body and page edge from the left
+    right=2 cm, % seperation between body and page edge from the right
+    footskip=1.0 cm,
+]{geometry} 
+\usepackage{titlesec, tabularx, array, xcolor, enumitem, fontawesome5, amsmath, hyperref, eso-pic, calc, bookmark, lastpage, changepage, paracol, ifthen, needspace, iftex}
+\definecolor{primaryColor}{RGB}{0, 0, 0} 
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+\usepackage{charter}
+
+% Formatting
+\raggedright
+\pagestyle{empty}
+\setcounter{secnumdepth}{0} 
+\setlength{\parindent}{0pt} 
+\pagenumbering{gobble} 
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\fontsize{25 pt}{25 pt}\selectfont Rajath Chandrashekar}\\
+    \vspace{5 pt}
+    {New York, United States} \quad\textbar\quad
+    \href{mailto:rajathch@buffalo.edu}{rajathch@buffalo.edu} \quad\textbar\quad
+    +1 (716)-253-5088 \quad\textbar\quad
+    \href{https://linkedin.com/in/rajath-chandrashekar-80432915a}{linkedin.com/in/rajath-chandrashekar}\\
+\end{center}
+
+% Summary
+\section{Summary}
+Innovative Mechanical Design Engineer with 3+ years of experience in designing and testing complex mechanical systems, including aircraft and medical components. An expertise in the latest advancements in Robotics and AI with a Masters in Robotics. Seeking a challenging R\&D Mechanical Design Engineer role .
+
+% Experience
+\section{Experience}
+\textbf{Teaching Assistant, University at Buffalo} \hfill \textbf{Sept 2023 – Present}\\
+\begin{itemize}
+    \item Teaching Assistant in Computer vision, Digital Controls and Flight Dynamics class
+    \item Conducted office hours, setting exam papers and assignments from time to time and Evaluating the students.
+    \item As a course instructor, I have an expertise in kinematics and dynamics of robots, Transformations, Linear Algebra, and Control.
+\end{itemize}
+
+\textbf{Project Fellow, Mechanical Design Engineer, CMTI} \hfill \textbf{July 2019 - December 2022}\\
+\begin{itemize}
+    \item Planning, designing, manufacturing, procuring and assembling mechanical systems. 
+Design and qualification of test beds used in aircraft parts testing.
+\item Worked as an R\&D mechanical engineer in the design of pneumatic proportional valves from prototype to production to achieve linear control characteristics for medical industry applications.
+\item We extensively used AS9100 quality standards and other ISO standards for design practices and GD\&T.
+Detail-oriented with proper documentation through BOM, ECR, product manuals, user manual preparation, and safety manual preparation according to OSHA standard.
+\item Worked on projects that included various combinations in hydraulics, pneumatics, high temperature, and vacuum.  
+\item Procurement and vendor relations all the way through purchase ethics and best practices to meet deadlines and quality standards.
+\item Experience with Lathe, Mill, Bench drill, CNC machining, Sheet Metal Fabrication, Assembly  and 3D printing. 
+\end{itemize}
+
+\textbf{Apprentice Trainee, Mechanical Engineer, BEL} \hfill \textbf{March 2018 – Aug 2018}\\
+\begin{itemize}
+    \item Trained electrical and mechanical engineers in an interdisciplinary environment and collaborated in the innovative redesign of the structural components of the transformer, improving the durability by 15\% through the integration of advanced materials.
+    \item Contributed towards the design of transformer mechanical systems considering all the electrical needs.
+\end{itemize}
+
+% Projects (Lab)
+\section{Projects (Lab)}
+\textbf{Learning-Based Controller Design for Humanoid Walking (UB) } \hfill \textbf{Feb 2023 – Present}\\
+\begin{itemize}
+    \item As a part of the culminating master’s thesis, I am using Deep Reinforcement Learning to train a control policy to make humanoid robot called BRUCE and Unitree GO2 Dog.
+    \item Through this project I have gained deep understanding of complexities of bipedal walking controller, and experience working on a real bipedal robot.
+    \item Inverse Kinematics, Forward Kinematics using DH and ET methods, State Estimation using Complimentary and Kalman Filters, Low level motion control joint PID Control tuning. 
+\end{itemize}
+
+\textbf{Design of Swung Up controller for an Inverted pendulum (UB)}  \hfill \textbf{March 2023 – April 2023}\\
+\begin{itemize}
+    \item Swing-up controller was designed using energy methods and tested under simulation in MATLAB and SIMULINK.
+    \item A model of the inverted pendulum was created based on Lagrange methods to create a state space representation of the pendulum and further the system was linearized.
+    \item Robot Control and Dynamics were practically explored.
+\end{itemize}
+
+% Projects (Industry)
+\section{Projects (Industry)}
+
+\textbf{Design and Development Hydraulic Second Line Test Rig (CMTI)}  \hfill \textbf{July 2019 – Dec 2022}\\
+\begin{itemize}
+    \item Involved from end to end: From Part-design, manufacturing and component selection to procurement and assembly of hydraulic and mechanical systems and sensor integration and selection.
+    \item Preparing functional test procedures and qualification documents, functional and design verification the rigs.
+    \item Used F.E.A methods to analyze structural frames.
+    \item Created drawings using GD\&T using ANSI Y-14.5, by keeping into account various manufacturing processes.
+    \item Foremost  in vendor development activities for creating a reliable supply chain to meet deadlines and quality needs (AS9100 and ISO9001).
+\end{itemize}
+
+\textbf{Design and Development of Pneumatic Proportional Valve for Ventilator (CMTI)}  \hfill \textbf{March 2021 – Sept 2022}\\
+\begin{itemize}
+    \item Created an R\&D road-map for the project and successfully executed it over the span of the project.
+    \item Control system behavior predictive Modeling of mechanical system and solenoid coil from first principal equations.
+    \item Directly applying concepts from research papers by implementing a genetic algorithm-based design optimization to optimize the control cone geometry of the valve.
+    \item The project was a stage for rewarding interdisciplinary collaboration and product design along with cradle to grave ownership, including Testing of the valve using custom test rig for design verification purpose.
+    \item Initial proof-of-concept of the valve using additive manufacturing and final proof-of-concept of the valve using machining process.
+\end{itemize}
+
+\textbf{Design of Testing setup for Fuel Actuator (CMTI)}  \hfill \textbf{Nov 2019 – Dec 2021}\\
+\begin{itemize}
+    \item Complete design of an high temperature fuel system with vacuum chamber and induction coil heater to handle JetA1 fuel. 
+    \item Design of hydraulic system circuit to handle Jet A1 fuel both at high (270 °C) and low (-10 °C) temperatures.
+    \item Created a P.I.D Controller for accurate temperature profiling of the working fluid required for testing.
+    \item Filed a Patent for this process, Patent No. 202141005463.
+\end{itemize}
+
+% Education
+\section{Education}
+\textbf{University at Buffalo, NY} \hfill Master of Science in Robotics, 2025 (GPA: 3.9)\\
+\textbf{Visvesvaraya Technological University, INDIA} \hfill Bachelor’s in Mechanical Engineering, 2017 (GPA: 4)
+
+% Skills
+\section{Skills}
+\textbf{Software:} CATIA, SOLIDWORKS, AUTOCAD, MATLAB/SIMULINK, ANSYS Mechanical, CFD,  ROS-1, ROS-2, MuJoCo, DRAKE\\
+\textbf{Expertise:} Control Systems, Python, C++, Analytical Problem Solving, Embedded C, FEA, GD\&T, RL, PPO, Real Robot Experience, Sheet Metal, Machining, 3D Printing and Still counting ....
+
+\end{document}
